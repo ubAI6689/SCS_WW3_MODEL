@@ -1,39 +1,48 @@
+# WAVEWATCH III Build and Output files
+/WW3/build/
+/output/
+/work/*.ww3
+/work/*.out
+/work/*.log
+/work/mapsta.ww3
+/work/mask.ww3
+/work/mod_def.ww3
+/work/restart.ww3
+/work/wind.ww3
 
+# Git submodules - exclude these directories since they're separate repos
+/WW3/
+/wavevis_py310/
 
+# Exclude only large files (>100MB) by size
+/gridgen/reference/MNT_ATL100m_HOMONIM_WGS84_NM_ZNEG.nc
+/gridgen/reference/MNT_NC100m_TSUCAL_GEO_refNM_ZNEG_V1.0.nc
+/gridgen/reference/coastal_bound_full.mat
+/gridgen/reference/coastal_bound_high.mat
+/gridgen/reference/coastal_bound_osm_0.00003.mat
+/gridgen/reference/coastal_bound_osm_0.05.mat
+/gridgen/reference/etopo1.nc
+/gridgen/reference/etopo2.nc
+/gridgen/reference/gebco2014_360.nc
+/gridgen/reference/gebco2022_360.nc
+/gridgen/reference/gebco_2014.nc
+/gridgen/reference/gebco_2022.nc
+/gridgen/reference/openstreetmap_land-polygons/
+/gridgen/reference/xyz_iro_1k.grd
 
-#file
-*.nc
-*.grd
-*.ps
-*.pdf
-*.dvi
+# Compiled files
+*.o
+*.mod
+*.a
+*.so
+*.la
+*.dylib
+
+# Temp/backup files
 *~
 *.swp
 .*.swp
 .DS_Store
 
-#fortran
-*.mod
-*.o
-*__*
-
-#matlab
-*.mat
-
-#archive
-*.tar.gz
-*.zip
-*.tgz
-
-#figure
-*.png
-*.jpeg
-*.jpg
-*.fig
-*.tif
-*.tiff
-
-#lib
-*.so
-*.la
-
+# CLAUDE.md is explicitly tracked
+\!CLAUDE.md
