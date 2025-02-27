@@ -1,6 +1,3 @@
 [submodule "WW3"]
 	path = WW3
 	url = https://github.com/NOAA-EMC/WW3.git
-[submodule "gridgen"]
-	path = gridgen
-	url = https://gitlab.ifremer.fr/wave/tools/gridgen.git
