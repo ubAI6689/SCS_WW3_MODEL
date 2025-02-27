@@ -10,6 +10,8 @@
 /work/restart.ww3
 /work/wind.ww3
 
+# Git submodules - exclude these directories since they're separate repos
+/WW3/
 # Exclude large directories by default
 /gridgen/
 /wavevis_py310/
