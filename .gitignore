@@ -1,0 +1,76 @@
+# WAVEWATCH III Build and Output files
+/WW3/build/
+/output/
+/work/*.ww3
+/work/*.out
+/work/*.log
+/work/mapsta.ww3
+/work/mask.ww3
+/work/mod_def.ww3
+/work/restart.ww3
+/work/wind.ww3
+
+# Exclude large directories by default
+/gridgen/
+/wavevis_py310/
+
+# But include specific config files
+!gridgen/namelist/
+!gridgen/bin/*.m
+!gridgen/bin/*.sh
+
+# Compiled files
+*.o
+*.mod
+*.a
+*.so
+*.la
+*.dylib
+
+# Data files
+*.nc
+*.ww3
+*.grd
+*.bot
+*.mask
+*.obst
+*.meta
+*.bin
+
+# Temp/backup files
+*~
+*.swp
+.*.swp
+.DS_Store
+
+# Documentation outputs
+*.pdf
+*.ps
+*.dvi
+*.aux
+*.bbl
+*.blg
+*.toc
+*.log
+*.out
+
+# Image files
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.fig
+
+# Archive files
+*.tar.gz
+*.zip
+*.tgz
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# CLAUDE.md is explicitly tracked
+!CLAUDE.md
